@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #dce8ff;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            color: #304878;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #304878;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #dce8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #304878;
+            margin-bottom: 25px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #4869a8;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background-color: #4869a8;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            background-color: #304878;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #dce8ff;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Tablet responsive design */
+        @media (max-width: 900px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 600px) {
+            header {
+                padding: 25px 15px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .project-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Creative Projects</h1>
+        <p>Explore my web development practice projects</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main id="home" class="container">
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h3>Profile Card</h3>
+                    <p>A simple profile card designed using HTML and CSS.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>A clean landing page with a modern layout and styling.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Product Grid</h3>
+                    <p>A product layout displaying products in organized cards.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Login Page</h3>
+                    <p>A centered login page with a simple and attractive design.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Photo Gallery</h3>
+                    <p>A photo gallery that adjusts to different screen sizes.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Dashboard Layout</h3>
+                    <p>A dashboard layout created with a responsive grid.</p>
+                    <a href="#about">Learn More</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" style="text-align: center; margin-top: 40px;">
+            <h2>About This Project</h2>
+            <p>This webpage demonstrates responsive web design using CSS media queries.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Creative Projects | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
